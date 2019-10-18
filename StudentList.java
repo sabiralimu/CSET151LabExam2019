@@ -6,6 +6,12 @@ public class StudentList {
 	{
 
 //		Check arguments
+            if (args == null || args.Length != 1)
+            {
+                Console.WriteLine("Usage: dotnet dev275x.rollcall.dll (a | r | c | +WORD | ?WORD)");
+                return; // Exit early.
+            }
+
 		if(args[0].equals("a")) 
 		{
 			System.out.println("Loading data ...");			
